@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header><img src="./images/logo.svg" alt=""></header>
+  <header><img src="./images/logo.svg" alt="" aria-level="1"></header>
   <main class="main">
     <div class="container">
       <form id="calc" action="/" class="left" autocomplete="off" novalidate>
@@ -47,14 +47,14 @@
                       
                   </div>
                   <div class="tip-opt custom-input">
-                      <!-- <label for="custom">Custom</label> -->
+                      <label for="custom" class="hidden">Custom</label>
                       <input type="text" name="percent" id="custom" placeholder="Custom">
                 </div>
               </div>
           </div>
           <div class="input">
               <div class="lab">
-                <label class="input-title" for="people-input">Number of People</label>
+                <label class="input-title" for="people-input" for="people-input">Number of People</label>
                 <p class="required">Can't be zero</p>
               </div>
               <div class="input-text-cont icon-people">

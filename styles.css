@@ -252,3 +252,7 @@ input[type="text"]:focus{
         gap: 2rem;
     }
 }
+
+.hidden{
+    display: none !important;
+}
