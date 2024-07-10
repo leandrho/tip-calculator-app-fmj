@@ -11,7 +11,10 @@
 </head>
 <body>
 
-  <header><img src="./images/logo.svg" alt="" aria-level="1"></header>
+  <header>
+    <h1 id="titulo" class="visually-hidden " aria-hidden="true">Tip calculator</h1>
+    <img src="./images/logo.svg" alt="" aria-labelledby="titulo">
+  </header>
   <main class="main">
     <div class="container">
       <form id="calc" action="/" class="left" autocomplete="off" novalidate>
@@ -47,8 +50,8 @@
                       
                   </div>
                   <div class="tip-opt custom-input">
-                      <label for="custom" class="hidden">Custom</label>
-                      <input type="text" name="percent" id="custom" placeholder="Custom">
+                      <!-- <label for="custom">Custom</label> -->
+                      <input type="text" name="percent" id="custom" placeholder="Custom" aria-label="Percent">
                 </div>
               </div>
           </div>
@@ -69,16 +72,14 @@
                   <p>Tip Amount</p>
                   <p>/ person</p>
               </div>
-              <label for="tip-per-person" class="hidden">Tip pp</label>
-              <input type="text" form="calc" class="total-cash" id="tip-per-person" value="$0.00" readonly >
+              <input type="text" form="calc" class="total-cash" id="tip-per-person" value="$0.00" aria-label="Tip" readonly >
             </div>
             <div class="total-res">
                 <div class="total-title">
                     <p>Total</p>
                     <p>/ person</p>
                 </div>
-                <label for="total-per-person" class="hidden">Total pp</label>
-                <input type="text" form="calc" class="total-cash" id="total-per-person" value="$0.00" readonly>
+                <input type="text" form="calc" class="total-cash" id="total-per-person" value="$0.00" aria-label="Total" readonly>
             </div>
         </div>  
         <button form="calc" type="reset" class="reset-btn">Reset</button>
