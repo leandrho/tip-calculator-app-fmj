@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <header><img src="./images/logo.svg" alt=""></header>
+  <main class="main">
+    <div class="container">
+      <form id="calc" action="/" class="left" autocomplete="off" novalidate>
+          <div class="input">
+              <label class="input-title" for="bill-input">Bill</label>
+              <div class="input-text-cont icon-cash">
+                <input type="text" class="input-text" id="bill-input" placeholder="0">
+              </div>
+              
+          </div>
+          <div class="input">
+              <p class="input-title">Select Tip %</p>
+              <div class="tip-opts">
+                  <div class="tip-opt">
+                      <input type="radio" name="percent" id="five" value="5">
+                      <label for="five">5%</label>
+                  </div>
+                  <div class="tip-opt">
+                      <input type="radio" name="percent" id="ten" value="10">
+                      <label for="ten">10%</label>
+                  </div>
+                  <div class="tip-opt">
+                      <input type="radio" name="percent" id="fifteen" value="15">
+                      <label for="fifteen">15%</label>
+                  </div>
+                  <div class="tip-opt">
+                      <input type="radio" name="percent" id="twenty-five" value="25">
+                      <label for="twenty-five">25%</label>
+                  </div>
+                  <div class="tip-opt">
+                      <input type="radio" name="percent" id="fifty" value="50">
+                      <label for="fifty">50%</label>
+                      
+                  </div>
+                  <div class="tip-opt custom-input">
+                      <!-- <label for="custom">Custom</label> -->
+                      <input type="text" name="percent" id="custom" placeholder="Custom">
+                </div>
+              </div>
+          </div>
+          <div class="input">
+              <div class="lab">
+                <label class="input-title" for="people-input">Number of People</label>
+                <p class="required">Can't be zero</p>
+              </div>
+              <div class="input-text-cont icon-people">
+                  <input class="input-text" type="text" id="people-input" placeholder="0">
+              </div>
+          </div>
+      </form>
+      <div class="right">
+        <div class="total-mounts">
+            <div class="total-res">
+              <div class="total-title">
+                  <p>Tip Amount</p>
+                  <p>/ person</p>
+              </div>
+              <input type="text" form="calc" class="total-cash" id="tip-per-person" value="$0.00" readonly >
+            </div>
+            <div class="total-res">
+                <div class="total-title">
+                    <p>Total</p>
+                    <p>/ person</p>
+                </div>
+                <input type="text" form="calc" class="total-cash" id="total-per-person" value="$0.00" readonly>
+            </div>
+        </div>  
+        <button form="calc" type="reset" class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </main>
+<script src="./script.js"></script>
+</body>
+</html>
