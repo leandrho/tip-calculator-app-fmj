@@ -21,10 +21,10 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
 
     background-color: var(--Light-grayish-cyan);
-    padding-top: 15vh;
+    padding-top: 16vh;
 
     font-family: 'Space Mono', sans-serif;
     font-weight: 700;
